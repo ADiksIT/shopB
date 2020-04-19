@@ -107,7 +107,7 @@ input, button {
     margin-top: -7px;
     display: none;
     position: absolute;
-    background-image: url(../../../src/img/dropdown-bgd.png);
+    background-image: url(/img/dropdown-bgd.png);
     background-repeat: no-repeat;
     width: 261px;
     height: 536px;
@@ -192,7 +192,7 @@ border-radius: 5.0px;
       
                                 /*slider-content*/
 .slider-bgd-img{
-    background-image: url(../../../src/img/slider-bgd.png);
+    background-image: url(/img/slider-bgd.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #e8e8e8;
@@ -435,7 +435,7 @@ letter-spacing: 1px;
 .banner-img{
     width: 767px;
     height: 529px;
-    background-image: url(../../../src/img/feature-banner.png);
+    background-image: url(/img/feature-banner.png);
     background-repeat: no-repeat;
 }
 
@@ -507,7 +507,7 @@ letter-spacing: 1px;
     height: 438px;
     background-position: center;
     background-size: cover;
-    background-image: url(../../../src/img/subscribe-bgd.png);
+    background-image: url(/img/subscribe-bgd.png);
     background-repeat: no-repeat;
 }
 
