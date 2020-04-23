@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="./style/css/products.css">
     <title>Product</title>
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="/node_modules/ion-rangeslider/css/ion.rangeSlider.css"/>
+    
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Plugin JavaScript file-->
+    <script src="/node_modules/ion-rangeslider/js/ion.rangeSlider.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="wrapper header-wrap">
-            <a href="#"><img src="../src/img/logo.png" alt="BRAND" class="logo"></a>
+            <a href="./index.html"><img src="../src/img/logo.png" alt="BRAND" class="logo"></a>
             <div class="fs-cart-wrapper">
                 <div class="form-search">
                     <div class="drop-menu-btn">
@@ -49,5 +59,410 @@
         <!-- /.wrapper -->
     </header>
     <!-- /.header -->
+    <nav class="nav">
+        <div class="wrapper">  
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">Man</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accoseriese</a></li>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Hot Deals</a></li>
+            </ul>
+            <div class="mega-menu-wrap">
+                
+            </div>
+        </div>
+    </nav>
+    <!-- /.nav -->
+    <div class="bradcrumb-block">
+        <div class="wrapper">
+            <h3>New Arrivals </h3>
+            <nav class="nav-bradcrumb">
+                <ul>
+                    <li><a href="/index.html">HOME/</a></li>
+                    <li><a href="#">MEN/</a></li>
+                    <li><a href="#" class="active-bradcrumb">New Arrivals</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <div class="wrapper">
+        <div class="products">
+            <div class="products-menu">
+                <div class="products-block-category">
+                    <button class="products-btn">Category</button>
+                    <ul class="product-list-category">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Pants</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Sweaters & Knits</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Tanks</a></li>
+                    </ul>
+                </div>
+                <!-- /.product-list-category -->
+                <!-- /.products-btn -->
+                <button class="products-btn">brand</button>
+                <!-- /.products-btn -->
+                <button class="products-btn">designer</button>
+                <!-- /.products-btn -->
+            </div>
+            <div class="products-block">
+                <div class="products-filter">
+                    <div class="products-filter-trending">
+                        <h4 class="title">Trending now</h4>
+                        <p>Bohemian    |    Floral    |    Lace 
+                            Floral    |    Lace    |    Bohemian</p>
+                    </div>
+                    <!-- /.products-filter-trending -->
+                    <div class="products-filter-size">
+                        <h4 class="title">Size </h4>
+                            <div class="size-checked-4">
+                                <input type="checkbox" name="size" id=""><p class="size-title">XXS</p>
+                                <input type="checkbox" name="size" id=""><p class="size-title">XS</p>
+                                <input type="checkbox" name="size" id=""><p class="size-title">S</p>
+                                <input type="checkbox" name="size" id=""><p class="size-title">M</p>
+                            </div>
+                            <div class="size-checked-3">
+                                <input type="checkbox" name="size" id=""><p class="size-title">L</p>
+                                <input type="checkbox" name="size" id=""><p class="size-title">XL</p>
+                                <input type="checkbox" name="size" id=""><p class="size-title">XXL</p>
+                            </div>
+                    </div>
+                    <!-- /.products-filter-size -->
+                    <div class="products-filter-price">
+                        <h4 class="title">pRICE</h4>
+                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                        <script>
+                            jQuery(document).ready(function($){ //когда страница прогрузилас// ваш код          
+                            $(".js-range-slider").ionRangeSlider(
+                                {
+                                    skin: "flat",
+                                    type: "double",
+                                    prettify_enabled : true,
+                                    prefix : "$ ",
+                                    min: 30,
+                                    max: 1000,
+                                    from: 52,
+                                    to: 400,
+                                    grid: false,
+                                    hide_min_max : true
+                                }
+                            );
+                            });
+                        
+                        </script>
+                    </div>
+                    
+                    <!-- /.products-filter-price -->
+                </div>
+                <!-- /.products-filter -->
+                <div class="products-show-items">
+                    <div class="sort-by-block">
+                        <h4>Sort By</h4>
+                        <select name="" id="" class="sort-by-list">
+                            <option value="name">Name</option>
+                            <option value="price">Price</option>
+                        </select>
+                    </div>
+                    <div class="show-by-block">
+                        <h4>Show</h4>
+                        <select name="" id="" class="sort-by-list">
+                            <option value="name">09</option>
+                            <option value="price">05</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- /.products-show-items -->
+                <div class="products-items">
+                    <div class="products-cart-item">
+                        <a href="./home/men/newarrivials.html">
+                            <img src="./imgProducts/product-1.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                        <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-2.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-3.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-4.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-5.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-6.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-7.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-8.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products-cart-item">
+                        <a href="#">
+                            <img src="./imgProducts/product-9.png" alt="">
+                            <h3 class="card-name">Mango  People  T-shirt</h3>
+                            <h4 class="card-price">$52.00</h4>
+                        </a>
+                         <div class="card-item-hover">
+                            <div class="card-item-hover-btn">
+                                <button class="item-add-to-cart"> <img src="./imgProducts/add-to-cart.png" alt=""> Add to Cart</button>
+                                <button class="item-return"><img src="./imgProducts/return.png" alt="return"></button>
+                                <button class="item-like"><img src="./imgProducts/like.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.products-items -->
+                <div class="products-show-page">
+                    <div class="pagination">
+                        <a href="#" class="pagination-prev"></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6.....20</a>
+                        <a href="#" class="pagination-next active"></a>
+                    </div>
+                    <!-- /.pagination -->
+                    <button class="show-all-products">
+                        View All
+                    </button> <!-- /.show-all-products -->
+                </div>
+                <!-- /.pagination -->
+            </div>
+            <!-- /.products-block -->
+        </div>
+        <!-- /.products -->
+
+    </div>
+    <div class="feature-wrap">
+        <div class="wrapper">
+            <div class="feature">
+                <div class="feature-ships">
+                    <img src="./imgProducts/feature-ships.png" alt="ships">
+                    <h3>Free Delivery</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="feature-sale">
+                    <img src="./imgProducts/feature-sale.png" alt="sale">
+                    <h3>Sales & discounts</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="feature-korona">
+                    <img src="./imgProducts/feature-korona.png" alt="best">
+                    <h3>Quality assurance</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+            <!-- /.feature-box -->
+        </div>
+        <!-- /.wrapper -->
+    </div>
+    <!-- /.feature-box -->
+    <div class="subscribe">
+        <div class="wrapper">
+            <div class="subscribe-info">
+                <div class="subscribe-left">
+                    <div class="avatar">
+                        <img src="../src/img/avatar.png" alt="avatar">
+                    </div>
+                    <div class="about">
+                        <p class="subscribe-subtitle">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <br> 
+                            a pulvinar purus condimentum a. Aliquam condimentum <br> mattis neque sed pretium”</p>          
+                        <h3 class="subscribe-name">Bin Burhan</h3>
+                        <h3 class="subscribe-city">Dhaka, Bd</h3>
+                        <div class="slider-line"></div>
+                        <div class="slider-line"></div>
+                        <div class="slider-line"></div>
+                    </div>
+                   
+                </div>
+                <div class="subscribe-right">
+                    <div class="subscribe-right-txt">
+                        <h3 class="subscribe-right-titel">SUBSCRIBE</h3>
+                        <p class="subscribe-right-subtitle"> FOR OUR NEWLETTER AND PROMOTION</p>
+                    </div>
+                    <form action="#" class="subscribe-form">
+                        <input type="email" class="input-email" placeholder="Enter Your Email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </form>
+
+                </div>
+            </div>
+            <!--/subscribe-info-->
+        </div>
+    </div>
+    <!--/subscribe-->
+</main>
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer-about">
+            <div class="footer-brand">
+                <a href="#"><img src="../src/img/logo.png" alt="BRAND" class="logo"></a>
+                <p class="footer-brand-txt">
+                    Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.    
+                </p>
+                <p class="footer-brand-txt">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+            <div class="footer-company">
+                <h4 class="footer-title">Company</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">Home </a></li>
+                    <li><a href="#" class="footer-link">Shop</a></li>
+                    <li><a href="#" class="footer-link">About</a></li>
+                    <li><a href="#" class="footer-link">How It Works</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.footer-company -->
+            <div class="footer-info">
+                <h4 class="footer-title">Information</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">Tearms & Condition</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">How to Buy</a></li>
+                    <li><a href="#" class="footer-link">How to Sell</a></li>
+                    <li><a href="#" class="footer-link">Promotion</a></li>
+                </ul>
+            </div>
+            <!--/footer-infp-->
+            <div class="footer-category">
+                <h4 class="footer-title">Shop category</h4>
+                <ul>
+                    <li><a href="#" class="footer-link">Men</a></li>
+                    <li><a href="#" class="footer-link">Women</a></li>
+                    <li><a href="#" class="footer-link">Child</a></li>
+                    <li><a href="#" class="footer-link">Apparel</a></li>
+                    <li><a href="#" class="footer-link">Brows All</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- /.footer-about -->
+    </div>
+    <div class="footer-copyright">
+        <div class="wrapper">
+            <div class="copyright">
+                <h3 class="copy-brand"> © 2020  Brand  All Rights Reserved. </h3>
+               <div class="social-icon">
+                   <a href="#"><img src="../src/img/social-1.png" alt="social" class="icon-social"></a>
+                   <a href="#"><img src="../src/img/social-2.png" alt="social" class="icon-social"></a>
+                   <a href="#"><img src="../src/img/social-3.png" alt="social" class="icon-social"></a>
+                   <a href="#"><img src="../src/img/social-4.png" alt="social" class="icon-social"></a>
+                   <a href="#"><img src="../src/img/social-5.png" alt="social" class="icon-social"></a>
+                </div>
+              </div>
+                <!-- /.copyright -->
+        </div>
+    </div>
+   
+
+</footer>
+     
 </body>
 </html>
