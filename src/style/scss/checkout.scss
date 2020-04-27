@@ -1,36 +1,4 @@
-.bradcrumb-block{
-    background-color: #f8f3f4;
-    padding: 65px 0;
-    & .wrapper{
-        display: flex;
-        justify-content: space-between;
-        & h3{
-            color:  #f16d7f;
-            font-size: 24px;
-            font-weight: 400;
-            text-transform: uppercase;
-        }
-    }
-    & .nav-bradcrumb{
-        & ul{
-            display: flex;
-            justify-content: space-between;
-        }
-        & li a{
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            
-            color: #636363;
-            font-weight: 400;
-        }
-        & .active-bradcrumb{
-            font-weight: 700;
-            color: #f16d7f;
-        }
-    }
-}
+
 .information{
     padding-top: 90px;
     padding-bottom: 185px;

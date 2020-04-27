@@ -1,33 +1,3 @@
-.bradcrumb-block {
-  background-color: #f8f3f4;
-  padding: 65px 0;
-}
-.bradcrumb-block .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.bradcrumb-block .wrapper h3 {
-  color: #f16d7f;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.bradcrumb-block .nav-bradcrumb ul {
-  display: flex;
-  justify-content: space-between;
-}
-.bradcrumb-block .nav-bradcrumb li a {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #636363;
-  font-weight: 400;
-}
-.bradcrumb-block .nav-bradcrumb .active-bradcrumb {
-  font-weight: 700;
-  color: #f16d7f;
-}
 
 .information {
   padding-top: 90px;

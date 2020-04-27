@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="./style/css/main.css">
     <link rel="stylesheet" href="./style/css/products.css">
     <title>Product</title>
     <!--Plugin CSS file with desired skin-->
-    <link rel="stylesheet" href="/node_modules/ion-rangeslider/css/ion.rangeSlider.css"/>
-    
+    <link rel="stylesheet" href="/node_modules/ion-rangeslider/css/ion.rangeSlider.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <!--Plugin JavaScript file-->
-    <script src="/node_modules/ion-rangeslider/js/ion.rangeSlider.js"></script>
+    <script src="./js/rangeSliderSettings.js"></script>
+    <script src="/node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -143,25 +144,6 @@
                     <div class="products-filter-price">
                         <h4 class="title">pRICE</h4>
                         <input type="text" class="js-range-slider" name="my_range" value="" />
-                        <script>
-                            jQuery(document).ready(function($){ //когда страница прогрузилас// ваш код          
-                            $(".js-range-slider").ionRangeSlider(
-                                {
-                                    skin: "flat",
-                                    type: "double",
-                                    prettify_enabled : true,
-                                    prefix : "$ ",
-                                    min: 30,
-                                    max: 1000,
-                                    from: 52,
-                                    to: 400,
-                                    grid: false,
-                                    hide_min_max : true
-                                }
-                            );
-                            });
-                        
-                        </script>
                     </div>
                     
                     <!-- /.products-filter-price -->
