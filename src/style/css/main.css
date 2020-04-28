@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -49,9 +50,8 @@ input, button {
   margin-right: 37px;
 }
 
-.fs-cart-wrapper {
+.user-menu {
   display: flex;
-  flex: auto;
   align-items: center;
 }
 
@@ -108,6 +108,7 @@ input, button {
 }
 
 .dropdown {
+  z-index: 2;
   margin-top: -7px;
   display: none;
   position: absolute;
@@ -399,6 +400,13 @@ input, button {
   line-height: 42px;
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  /* width: auto; */
+  width: 50%;
+}
+
 .footer-copyright {
   background-color: #e6e6e6;
 }
@@ -437,6 +445,10 @@ input, button {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
+  }
+
+  .footer-wrap {
+    width: 100%;
   }
 
   .subscribe {
@@ -485,13 +497,14 @@ input, button {
   }
 
   .nav ul:hover {
+    transition: 0.2s;
     flex-direction: column;
     align-items: center;
     line-height: 35px;
   }
 
   .nav ul:hover .nav-elem-link:not(:first-child) {
-    transition: 0.1s;
+    transition: 0.9s;
     display: block;
   }
 }
@@ -502,14 +515,89 @@ input, button {
 
   .header-wrap {
     flex-wrap: wrap;
-    justify-content: center;
   }
   .header-wrap a {
     margin-bottom: 4%;
   }
   .header-wrap .form-search {
     order: 2;
-    margin-left: 13%;
+  }
+  .header-wrap .form-search input {
+    width: 100%;
+  }
+
+  .subscribe {
+    height: 100%;
+    background-position: left;
+  }
+  .subscribe-info {
+    flex-direction: column;
+  }
+  .subscribe-left {
+    width: 100%;
+  }
+  .subscribe-right {
+    margin-left: 80px;
+    margin-top: 80px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 570px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  .header .search-item {
+    width: 130px;
+  }
+
+  .copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .copy-brand {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .user-menu a img {
+    margin-right: 12px;
+  }
+
+  .footer-about {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .footer-wrap {
+    justify-content: space-between;
+    align-items: center;
+    /* width: 300px; */
+    flex-direction: column;
+  }
+  .footer-wrap .footer-company {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-wrap .footer-info {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-wrap .footer-category {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .subscribe-right {
+    margin-left: 70px;
+  }
+  .subscribe .input-email {
+    width: 170px;
   }
 }
 

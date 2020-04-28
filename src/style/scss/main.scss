@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent
 }
 
 body{
@@ -47,9 +48,13 @@ input, button {
 .logo{
     margin-right: 37px;
 }
-.fs-cart-wrapper{
+// .fs-cart-wrapper{
+//     display: flex;
+//     flex: auto;
+//     align-items: center;
+// }
+.user-menu{
     display: flex;
-    flex: auto;
     align-items: center;
 }
 /*корзина и кнопка "Мой аакаунт"*/
@@ -382,6 +387,12 @@ input, button {
     font-weight: 400;
     letter-spacing: 0.4px;
     line-height: 42px;
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    /* width: auto; */
+    width: 50%;
 }
 
 .footer-copyright{

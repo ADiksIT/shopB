@@ -7,6 +7,9 @@
         margin-bottom: 40px;
         text-align: center;
    }
+   .footer-wrap{
+       width: 100%;
+   }
    .subscribe{
         padding-top: 17%;
        .avatar img{
@@ -52,12 +55,13 @@
         display: none;
     }
     .nav ul:hover {
+        transition: 0.2s;
         flex-direction: column;
         align-items: center;
         line-height: 35px;
     }
     .nav ul:hover .nav-elem-link:not(:first-child){
-        transition: 0.1s;
+        transition: 0.9s;
         display: block;
     }
     // .nav ul .nav-elem-link:not(:first-child){
@@ -67,16 +71,102 @@
 @media (max-width: 760px){
     .wrapper{
         max-width: 560px;
+        
     }
     .header-wrap{
         flex-wrap: wrap;
-        justify-content: center;
+       // justify-content: center;
         a{
             margin-bottom: 4%;
         }
         .form-search{
             order: 2;
-            margin-left: 13%;
+            //margin-left: 13%;
+            input{
+                width: 100%;
+            }
+        }
+    }
+    .subscribe{
+        height: 100%;
+        background-position: left;
+        &-info{
+            flex-direction: column;
+        }
+        &-left{
+            width: 100%;
+        }
+        &-right{
+            margin-left: 80px;
+            margin-top: 80px;
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
         }
     }
 }
+@media (max-width: 570px){
+    .wrapper{
+        max-width: 90%;
+    }
+    
+    .header .search-item {
+        width: 130px;
+    }
+    .copyright{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .copy-brand{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 520px){
+    .user-menu a img{
+        margin-right: 12px;
+    }
+    .footer{
+        &-about{
+            padding-top: 60px;
+            padding-bottom: 40px;
+
+        }
+        &-wrap{
+            justify-content: space-between;
+            align-items: center;
+            /* width: 300px; */
+            flex-direction: column;
+            
+            .footer-company{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .footer-info{
+                text-align: center;
+                margin-top: 30px;
+            }
+            .footer-category{
+                text-align: center;
+                margin-top: 30px;
+            }
+    
+        }
+    }
+    
+}
+@media (max-width: 480px){
+    .subscribe{
+        &-right{
+        
+            margin-left: 70px;  
+            
+           // width: 170px;
+        }
+        & .input-email{
+            width: 170px;
+        }
+    }
+}
+   

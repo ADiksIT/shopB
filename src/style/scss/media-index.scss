@@ -1,0 +1,115 @@
+@media (max-width: 1200px){
+    .category-wrap{
+        width: 100%;
+        margin: 0 auto;
+        .right-category{
+            margin-left: 20px;
+        }
+        .label-for-mini-image{
+            width: 200px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .feature-banner{
+        display: block;
+        .banner-img{
+            width: 100%;
+            background-position: center;
+            
+        }
+        .banner-txt{
+            padding-left: 60px;
+            font-size: 44px;
+        }
+    }
+    .feature-blocks{
+        padding-top: 17%;
+        margin-top: 100px;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        .card{
+      
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+            &-txt{
+                margin: 0;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+    }
+    
+    .slider-text{
+        .title{
+            font-size: 50px;
+        }
+        .subtitle{
+            font-size: 30px;
+        }
+    }
+    .title-category{
+        font-size: 13px;
+    }
+    .for-category{
+        font-size: 25px;
+    }
+    .label-for-big-image{
+        padding: 11px 0;
+        width: 145px;
+        height: 62px;
+    }
+    .category-wrap .label-for-mini-image{
+        width: 160px;
+        padding: 11px 0;
+        height: 62px;
+    }
+}
+@media (max-width: 870px){
+    .items{
+        justify-content: space-around;
+    }
+    .banner-txt{
+        padding-left: 40px;
+       
+    }
+}
+@media (max-width: 760px){
+    .feature-blocks{
+        flex-direction: column;
+        //padding-top: 10%;
+        height: 750px;
+        padding: 50px 0 0 0;
+        .card{
+            margin-bottom: 6%;
+            width: 60%;
+        }
+    }
+    .feature-banner .banner-txt{
+        padding-left: 30px;
+        font-size: 34px;
+    }
+    .items{
+        justify-content: space-between;
+    }
+    .category-wrap{
+        flex-wrap: wrap;
+        .right-category{
+            margin-left: 0;
+        }
+    }
+}
+@media (max-width: 570px){
+    .items{
+        justify-content: center;
+    }
+}
